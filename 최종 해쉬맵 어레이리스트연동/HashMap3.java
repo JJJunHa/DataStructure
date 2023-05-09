@@ -61,6 +61,21 @@ public class HashMap3<K, V> implements Map3<K, V> {
 		
 	}
     
+    @Override
+	public V remove(K key) {
+    	int i=0;
+    	V removeNum=null;
+    	for(Pair<K, V> x:list) {
+    		if(x.getKey()==key||x.getKey().equals(key)) {
+    			removeNum=list.get(i).getValue();
+    			list.remove(i);
+    			return removeNum;
+    		}
+    		i++;
+    	}
+		return null;
+	}
+    
     private class Pair<K2, V2> {
         private K key;
         private V value;
@@ -86,4 +101,6 @@ public class HashMap3<K, V> implements Map3<K, V> {
             this.value = value;
         }
     }
+
+	
 }
