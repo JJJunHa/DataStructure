@@ -10,18 +10,21 @@ public class test {
 		Map3<String, String> test = new HashMap3<>();
 		
 		
-		map.put("�׽�Ʈ","�׽�Ʈ");
-		map.put("�׽�Ʈ2","�׽�Ʈ");
-		map.put("�׽�Ʈ","�׽�Ʈ1");
+		map.put("테스트","테스트");
+		map.put("테스트2","테스트");
+		map.put("테스트","테스트1");
 		
 		
 		
-		test.put("�׽�Ʈ","�׽�Ʈ");
-		test.put("�׽�Ʈ2","�׽�Ʈ");
-		test.put("�׽�Ʈ","�׽�Ʈ1");
 		
-		System.out.println(map.put("�׽�Ʈ2","�׽�Ʈ2"));
-		System.out.println(test.put("�׽�Ʈ2","�׽�Ʈ2"));
+		test.put("테스트","테스트");
+		test.put("테스트2","테스트");
+		test.put("테스트","테스트1");
+		System.out.println(map.remove("테스트"));
+		System.out.println(test.remove("테스트"));
+		
+		System.out.println(map.put("테스트2","테스트2"));
+		System.out.println(test.put("테스트2","테스트2"));
 		System.out.println(test.toString());
 		System.out.println(map.toString());
 
